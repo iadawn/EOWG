@@ -25,17 +25,24 @@
 					</svg>
 				</div>
 				<h1>Check Out</h1>
-				<button type="button" class="btn" data-controls="modal" aria-controls="placeOrder">PLACE ORDER</button>
+				<button type="button" class="btn btn-primary fake-btn">PLACE ORDER</button>
+				<button type="button" class="btn btn-primary is-hidden" data-controls="modal" aria-controls="placeOrder">PLACE ORDER</button>
 			</header>
 			<main>
 				<article class="ship-to">
 					<h2>Ship To</h2>
-					<button type="button" class="btn" data-controls="modal" aria-controls="shipAddress">Change</button>
-					<p class="name">Hayden Jones</p>
-					<p class="address">
-						111 22nd Street<br />
-						New York, NY 12345
+					<button type="button" class="btn btn-primary" data-controls="modal" aria-controls="changeAddress">Change</button>
+					<p class="name">
+						<span data-address="firstName">Hayden</span>
+						<span data-address="lastName">Jones</span>
 					</p>
+					<p class="address">
+						<span data-address="address">111 22nd Street</span><br />
+						<span data-address="city">New York</span>,
+						<span data-address="state">NY</span>
+						<span data-address="zipCode">12345</span>
+					</p>
+					<form action=""><label for="gift"><input type="checkbox" name="" id="gift"> This is a gift</label></form>
 				</article>
 				<article class="cost-summary">
 					<h2>Summary</h2>
@@ -73,6 +80,48 @@
 				</article>
 			</main>
 		</div>
+		<div id="changeAddress" class="modal" role="dialog" data-widget="modal" aria-hidden="true">
+			<div role="document">
+				<div>
+					<button type="button" class="btn svg close-dialog" data-control="close">
+						<span class="accessibly-hidden">
+							Close Modal Window
+						</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45" role="presentation" focusable="false">
+							<path d="M22.5,0C10.1,0,0,10.1,0,22.5S10.1,45,22.5,45S45,34.9,45,22.5S34.9,0,22.5,0z M27.9,35.5l-3-4.6c-1.2-1.8-2-3.1-2.9-4.6,h-0.1c-0.7,1.5-1.5,2.8-2.5,4.6l-2.7,4.6H8.2l9.5-13L8.5,9.9h8.5l2.9,4.7c1,1.6,1.7,2.8,2.5,4.3h0.1c0.8-1.6,1.4-2.8,2.2-4.3,l2.8-4.7H36l-9.3,12.5l9.8,13.1H27.9z"/>
+						</svg>
+					</button>
+				</div>
+				<h2>Your Shipping Address</h2>
+				<form action="">
+					<div class="form-row">
+						<label for="firstName">First Name</label>
+						<input type="text" id="firstName" value="Hayden" />
+					</div>
+					<div class="form-row">
+						<label for="lastName">Last Name</label>
+						<input type="text" id="lastName" value="Jones" />
+					</div>
+					<div class="form-row">
+						<label for="address">Address</label>
+						<input type="text" id="address" value="111 22nd Street" />
+					</div>
+					<div class="form-row">
+						<label for="city">City</label>
+						<input type="text" id="city" value="New York" />
+					</div>
+					<div class="form-row">
+						<label for="state">State</label>
+						<input type="text" id="state" value="NY" />
+					</div>
+					<div class="form-row">
+						<label for="zipCode">Zip Code</label>
+						<input type="text" id="zipCode" value="12345" />
+					</div>
+					<button type="submit" class="btn btn-primary" data-control="close">Finish</button>
+				</form>
+			</div>
+		</div>
 		<div id="placeOrder" class="modal" role="dialog" data-widget="modal" aria-hidden="true">
 			<div role="document">
 				<div>
@@ -85,14 +134,12 @@
 						</svg>
 					</button>
 				</div>
-				<h2>Escaping the Modal Window</h2>
-				<p>With a modal you are mimicking an operating system dialog box wherein there is no way to leave the dialog without either:</p>
-				<ul class="bullet">
-					<li>engaging the actionable items in the dialog box, or</li>
-					<li>hitting the ESC key.</li>
-				</ul>
-				<p>A modal window should mimic this behavior.  As long as the user has a way out either by using the close button or by hitting “ESC” the modal is fine. It is acceptable that the user is unable to reach the browser chrome while the modal window is active.</p>
-				<p><a href="#">Fake link</a></p>
+				<h2>Your order has been placed.</h2>
+				<p class="h3">Here are some other books you might like.</p>
+				<div class="more-suggestions">
+
+
+				</div>
 			</div>
 		</div>
 		<div class="block-screen"></div>
@@ -101,5 +148,6 @@
 	<script type="text/javascript" src="js/namespacing.js"></script>
 	<script type="text/javascript" src="js/accessibility-helpers.js"></script>
 	<script type="text/javascript" src="js/dialog.js"></script>
+	<script src="js/bookstore-form.js"></script>
 </body>
 </html>
