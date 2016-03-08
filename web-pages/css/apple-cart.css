@@ -44,12 +44,13 @@ article {
 	top: 0.7ex;
 	width: 60px;
 }
-[aria-controls="placeOrder"] {
+[aria-controls="placeOrder"],
+.fake-btn {
 	position: absolute;
 	right: 1.5em;
 	top: 2ex;
 }
-[aria-controls="shipAddress"] {
+[aria-controls="changeAddress"] {
 	position: absolute;
 	right: 4px;
 	top: 1px;
@@ -63,7 +64,7 @@ h1 {
 article h2 {
 	margin-top: 0;
 }
-.btn {
+.btn-primary {
 	color: white;
 	background-color: #A38453;
 	-webkit-border-radius: 10px;
@@ -111,4 +112,7 @@ article h2 {
 .cart-item img {
 	float: left;
 	margin-right: 1em;
+}
+[for="gift"] {
+	width: auto;
 }
