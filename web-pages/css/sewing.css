@@ -41,21 +41,13 @@ header img {
 }
 nav {
 	text-align: right;
-	margin-top: .3ex;
-}
-nav a {
-	display: block;
-	background-color: #746b66;
-	color: white;
-	padding: .2ex .3em;
-	margin-left: -.1em
 }
 nav li {
 	display: inline-block;
 	line-height: 1;
 }
 h1 {
-	margin: 0 0 0 131px;
+	margin: 0 0 1ex 131px;
 	padding: 1ex 0 .3ex;
 	text-align: right;
 	font-family: Papyrus, "Big Caslon", Palatino;
@@ -85,12 +77,23 @@ h2 {
 	font-weight: normal;
 	font-size: 1.2rem;
 	margin: -10ex 0 1ex;
+	transition-duration: 2s;
+    transition-property: padding, margin;
 }
 .expy-date {
-	margin-bottom: .1ex;
+	margin-bottom: 1.5ex;
 }
-.notions {
+#triggerBig {
 	position: absolute;
 	right: 30px;
 	bottom: 30px;
+	background: none;
+	border: none;
+}
+#triggerBig:focus {
+	outline: none;
+	box-shadow: none;
+}
+.get-big {
+	padding: 1.5ex 1em;
 }
