@@ -1,0 +1,96 @@
+body {
+	background-color: #BBE1D9;
+}
+article {
+	display: inline-block;
+	width: 60%;
+	vertical-align: top;
+
+}
+article img {
+	float: left;
+	margin: 0 1.5em 1ex 0;
+}
+aside {
+	display: inline-block;
+	width: 35%;
+	margin-left: 3%;
+}
+.offer {
+	vertical-align: top;
+	border: 2px dashed #928984;
+	text-align: center;
+}
+.offer p {
+	line-height: 1.1;
+}
+#main {
+	position: relative;
+	overflow: visible;
+	margin: 10ex auto;
+	padding: 2ex 2em;
+	-webkit-box-shadow: 3px 3px 3px 3px #746b66;
+	box-shadow: 3px 3px 10px 0px #746b66;
+	min-height: 506px;
+}
+header img {
+	position: absolute;
+	left: -13px;
+	top: -80px;
+	width: 183px;
+}
+nav {
+	text-align: right;
+	margin-top: .3ex;
+}
+nav a {
+	display: block;
+	background-color: #746b66;
+	color: white;
+	padding: .2ex .3em;
+	margin-left: -.1em
+}
+nav li {
+	display: inline-block;
+	line-height: 1;
+}
+h1 {
+	margin: 0 0 0 131px;
+	padding: 1ex 0 .3ex;
+	text-align: right;
+	font-family: Papyrus, "Big Caslon", Palatino;
+	text-transform: none;
+	letter-spacing: .05em;
+}
+h2 {
+	font-family: Papyrus, "Big Caslon", Palatino;
+	font-size: 2.5rem;
+}
+.percent {
+	font-family: "Arial Black";
+	font-size: 3rem;
+	display: block;
+	margin: 1ex 0 0.2ex;
+}
+.percent + span {
+	font-family: "Arial Black";
+	font-size: 1.5rem;
+	display: block;
+}
+.btn-primary {
+	background-color: #746b66;
+	padding: .2ex .2em;
+	line-height: 1;
+	height: auto;
+	font-weight: normal;
+	font-size: 1.2rem;
+	margin: -10ex 0 1ex;
+}
+.expy-date {
+	margin-bottom: .1ex;
+}
+.notions {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+}
