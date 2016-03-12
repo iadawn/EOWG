@@ -1,0 +1,143 @@
+/*
+dk blue: #163554;
+light gray: #ccc;
+red: #562511;
+green: #438206;
+*/
+nav {
+	position: relative;
+	height: 60px;
+	max-width: 1100px;
+}
+#airlineLogo {
+	width: 180px;
+	position: absolute;
+	left: 20px;
+	top: 15px;
+}
+#airlineLogo * {
+	fill: #562511;
+}
+.nav-items {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 20px;
+	top: 23px;
+}
+.nav-item {
+	display: inline-block;
+}
+.nav-link {
+	display: block;
+	background-color: transparent;
+	color: #163554;
+	font-weight: normal;
+}
+section {
+	background: transparent url(../img/versailles.jpg) left top no-repeat;
+	background-size: 100%;
+	padding-top: 300px;
+	max-width: 1100px;
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #DCDDD3;
+}
+h1 {
+	border: none;
+	color: white;
+	margin: 0 1em;
+	font-weight: normal;
+	font-size: 5.0rem;
+	position: absolute;
+	right: 0;
+	top: 3.5ex;
+	text-shadow: 0 0 10px #000000;
+	text-align: right;
+}
+h2 {
+	font-weight: normal;
+	font-size: 1.6rem;
+}
+.log-in-panel {
+	float: left;
+	background-color: #562511;
+	color: #fff;
+	overflow: hidden;
+	font-weight: normal;
+	box-sizing: border-box;
+	padding: 1ex 1.3em 2ex;
+	width: 30%;
+	min-height: 295px;
+}
+.log-in-panel h2 {
+	color: white;
+}
+label {
+	display: block;
+	width: auto;
+	margin-right: 0;
+}
+input[type="text"],
+select {
+	width: 100%;
+    padding: .25ex .25em;
+    margin: .5ex 0;
+}
+article {
+	width: 70%;
+	overflow: hidden;
+	background-color: white;
+	box-sizing: border-box;
+	min-height: 295px;
+}
+.trip-options {
+	background-color: #DCDDD3;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.trip-option {
+	float: left;
+	width: 33%;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 1ex 1em;
+	text-align: center;
+}
+.trip-option:first-child {
+	width: 34%;
+}
+.trip-option.current {
+	background-color: white;
+}
+.trip-option-link {
+	color: #2E3236;
+	display: block;
+	width: 100%;
+}
+article form {
+	margin: 3ex 2em;
+}
+.required:after {
+	content: "*";
+	margin-left: .25em;
+	color: #a00;
+}
+.smallprint {
+	font-size: 1.1rem;
+}
+.form-cell {
+	width: 32%;
+	display: inline-block;
+	margin-right: .25em;
+}
+article [type="submit"] {
+	font-weight: normal;
+    width: 100%;
+    font-size: 1.3rem;
+    height: auto;
+    line-height: 1.35;
+    padding: .25ex .25em;
+    margin: .5ex 0;
+}
