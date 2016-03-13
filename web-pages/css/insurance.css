@@ -1,0 +1,160 @@
+/*
+blue: #007eb0;
+green: #5a8025;
+light green: #DDECC6;
+light gray: #F7F7F7;
+med gray: #EEEEEE;
+orange: F69234;
+type: #333333;
+*/
+body {
+	background-color: #F7F7F7;
+}
+body,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+}
+.page-wrapper {
+	margin: 0;
+	width: 100%;
+	background-color: transparent;
+}
+nav {
+	position: relative;
+	width: 100%;
+	box-shadow: 0 0 2px 2px #ADADAD;
+	background-color: white;
+}
+.nav-items {
+}
+nav .nav-item {
+	display: inline-block;
+	margin: 0;
+}
+.nav-link {
+	display: block;
+	background-color: transparent;
+	color: #163554;
+	font-weight: normal;
+}
+.nav-items-top {
+	background-color: #007eb0;
+	overflow: hidden;
+	text-align: center;
+	margin: 0;
+}
+.nav-items-top .current {
+	background-color: white;
+}
+.nav-items-top .nav-link {
+    color: white;
+    font-size: 1.6rem;
+    margin: 1.1ex 1.2em;
+    display: block;
+}
+.nav-items-top .current .nav-link {
+	color: #5a8025;
+}
+.nav-items-second {
+	text-align: center;
+	margin: 0;
+}
+.nav-items-second .nav-link {
+	font-weight: bold;
+	margin: 2ex 1em;
+}
+.nav-items-second .current .nav-link {
+	color: #5a8025;
+}
+section {
+}
+h1 {
+	text-transform: none;
+	font-weight: normal;
+	font-size: 2.2rem;
+	border: 0;
+}
+h2 {
+	font-weight: normal;
+	font-size: 1.8rem;
+	color: #5a8025;
+}
+legend, label {
+	display: block;
+	width: auto;
+	margin-right: 0;
+	margin-bottom: 1.5ex;
+}
+input[type="text"],
+select {
+	width: 100%;
+	padding: 1.4ex 1em;
+	margin:  0;
+}
+select {
+	height: 5.2ex;
+}
+article {
+	overflow: hidden;
+	padding: 5ex 3em;
+}
+article form {
+	background-color: white;
+	padding: 3ex 2em;
+	border: 4px solid #EEEEEE;
+}
+.form-cell {
+	width: 31%;
+	display: inline-block;
+	margin-right: 1em;
+	position: relative;
+	vertical-align: top;
+}
+.radio-label {
+	background-color: #F7F7F7;
+	padding: 1.5ex 1em;
+	width: 50%;
+	float: left;
+	border: 1px solid #D5D5D5;
+	margin-left: -1px;
+}
+.radio-label.checked {
+	background-color: #DDECC6;
+}
+.radio-label:first-of-type {
+		border-radius: 7px 0 0 7px;
+		margin-left: 0;
+}
+.radio-label:last-child {
+		border-radius: 0 7px 7px 0;
+}
+textarea {
+	width: 64%;
+}
+.calendar-icon {
+	width: 20px;
+	position: absolute;
+	right: 8px;
+	bottom: 9px;
+}
+.calendar-icon path,
+.calendar-icon g rect {
+	fill: #5a8025;
+}
+.date-picker {
+	position: absolute;
+	right: 0%;
+	top: -5px;
+	border: 1px solid #888;
+	background-color: white;
+	display: none;
+	width: 135px;
+	z-index: 10;
+}
+.month {
+	text-align: center;
+	background-color: #5a8025;
+	color: white;
+	padding: .25ex 0
+}
