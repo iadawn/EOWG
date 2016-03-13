@@ -148,7 +148,7 @@
 								<input type="text" name="from" id="from">
 							</div>
 							<div class="form-cell">
-								<label for="to">To</label>
+								<label for="to" class="required">To</label>
 								<input type="text" name="to" id="to">
 							</div>
 							<div class="form-cell">
@@ -163,10 +163,58 @@
 						</div>
 						<div class="form-row">
 							<div class="form-cell">
-								<label for="depart">Depart</label><input type="text" name="depart" id="depart">
+								<label for="depart" class="required">Depart</label>
+								<input type="text" name="depart" id="depart">
+								<svg version="1.1" class="calendar-icon" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 404 400" focusable="false" role="presentation">
+									<path d="M344,44v16.5c0,23.2-18.8,42-42,42s-42-18.8-42-42V44H144v16.5c0,23.2-18.8,42-42,42s-42-18.8-42-42V44H0v356h404V44H344z"/>
+									<rect x="29" y="142" fill="#FFFFFF" width="347" height="230"/>
+									<g>
+										<rect x="285" y="167" width="44" height="40"/>
+										<rect x="215" y="167" width="44" height="40"/>
+										<rect x="145" y="167" width="44" height="40"/>
+										<rect x="285" y="237" width="44" height="40"/>
+										<rect x="215" y="237" width="44" height="40"/>
+										<rect x="145" y="237" width="44" height="40"/>
+										<rect x="75" y="237" width="44" height="40"/>
+										<rect x="285" y="307" width="44" height="40"/>
+										<rect x="215" y="307" width="44" height="40"/>
+										<rect x="145" y="307" width="44" height="40"/>
+										<rect x="75" y="307" width="44" height="40"/>
+									</g>
+									<path d="M130,59c0,15.5-12.5,28-28,28l0,0c-15.5,0-28-12.5-28-28V28c0-15.5,12.5-28,28-28l0,0c15.5,0,28,12.5,28,28V59z"/>
+									<path d="M330,59c0,15.5-12.5,28-28,28l0,0c-15.5,0-28-12.5-28-28V28c0-15.5,12.5-28,28-28l0,0c15.5,0,28,12.5,28,28V59z"/>
+								</svg>
+								<div id="calDepart" class="date-picker">
+									<div class="month">April</div>
+									<img src="img/calendar-example.png" alt="">
+								</div>
 							</div>
 							<div class="form-cell">
-								<label for="return">Return</label><input type="text" name="return" id="return">
+								<label for="return" class="required">Return</label>
+								<input type="text" name="return" id="return">
+								<svg version="1.1" class="calendar-icon" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 404 400" focusable="false" role="presentation">
+									<path d="M344,44v16.5c0,23.2-18.8,42-42,42s-42-18.8-42-42V44H144v16.5c0,23.2-18.8,42-42,42s-42-18.8-42-42V44H0v356h404V44H344z"/>
+									<rect x="29" y="142" fill="#FFFFFF" width="347" height="230"/>
+									<g>
+										<rect x="285" y="167" width="44" height="40"/>
+										<rect x="215" y="167" width="44" height="40"/>
+										<rect x="145" y="167" width="44" height="40"/>
+										<rect x="285" y="237" width="44" height="40"/>
+										<rect x="215" y="237" width="44" height="40"/>
+										<rect x="145" y="237" width="44" height="40"/>
+										<rect x="75" y="237" width="44" height="40"/>
+										<rect x="285" y="307" width="44" height="40"/>
+										<rect x="215" y="307" width="44" height="40"/>
+										<rect x="145" y="307" width="44" height="40"/>
+										<rect x="75" y="307" width="44" height="40"/>
+									</g>
+									<path d="M130,59c0,15.5-12.5,28-28,28l0,0c-15.5,0-28-12.5-28-28V28c0-15.5,12.5-28,28-28l0,0c15.5,0,28,12.5,28,28V59z"/>
+									<path d="M330,59c0,15.5-12.5,28-28,28l0,0c-15.5,0-28-12.5-28-28V28c0-15.5,12.5-28,28-28l0,0c15.5,0,28,12.5,28,28V59z"/>
+								</svg>
+								<div id="calArrive" class="date-picker">
+									<div class="month">April</div>
+									<img src="img/calendar-example.png" alt="">
+								</div>
 							</div>
 							<div class="form-cell">
 								<button type="submit" class="btn btn-primary">Find</button>
@@ -184,5 +232,6 @@
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/namespacing.js"></script>
 	<script type="text/javascript" src="js/accessibility-helpers.js"></script>
+	<script type="text/javascript" src="js/flight.js"></script>
 </body>
 </html>

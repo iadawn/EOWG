@@ -66,7 +66,7 @@ h2 {
 	overflow: hidden;
 	font-weight: normal;
 	box-sizing: border-box;
-	padding: 1ex 1.3em 2ex;
+	padding: 3ex 1.3em 2ex;
 	width: 30%;
 	min-height: 295px;
 }
@@ -131,6 +131,7 @@ article form {
 	width: 32%;
 	display: inline-block;
 	margin-right: .25em;
+	position: relative;
 }
 article [type="submit"] {
 	font-weight: normal;
@@ -140,4 +141,26 @@ article [type="submit"] {
     line-height: 1.35;
     padding: .25ex .25em;
     margin: .5ex 0;
+}
+.calendar-icon {
+	width: 15px;
+	position: absolute;
+	right: 3px;
+	bottom: 5px;
+}
+.date-picker {
+	position: absolute;
+	right: -25%;
+	top: -5px;
+	border: 1px solid #2E3236;
+	background-color: white;
+	display: none;
+	width: 135px;
+	z-index: 10;
+}
+.month {
+	text-align: center;
+	background-color: #562511;
+	color: white;
+	padding: .25ex 0	
 }
