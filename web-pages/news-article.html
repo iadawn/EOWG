@@ -3,29 +3,54 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>A Sad Day for the Bonapartes</title>
+	<title>A Sad Year for Napoleons: The Washington Herald, Sunday, July 4, 1915</title>
 	<link rel="stylesheet" href="css/normalization.css" />
 	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/form.css" />
+	<link rel="stylesheet" href="css/news.css" />
 </head>
 <body>
 	<div class="container">
+		<header>
+			<h1>The Time Machine Tribune</h1>
+			<button type="button" class="hamburger"><span class="accessibly-hidden">Show Menu</span></button>
+			<nav>
+				<ul class="nav-items">
+					<li class="nav-item current"><a href="#" class="nav-link">Search Pages</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Advanced Search</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Digitized Newspapers 19th C</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Digitized Newspapers 20th C</a></li>
+				</ul>
+			</nav>
+			<form action="" id="searchBar" class="search-bar">
+				<label for="from">
+					From Year
+					<input type="text" name="from" id="from">
+				</label>
+				<label for="to">
+					<span class="plus">+</span>
+					To Year
+					<input type="text" name="to" id="to">
+				</label>
+				<label for="keywords">
+					<span class="plus">+</span>
+					Keywords
+					<input type="text" name="keywords" id="keywords">
+				</label>
+				<button class="">Search</button>
+			</form>
+		</header>
 		<div class="page-wrapper" id="main" role="main" tabindex="-1">
-			<header>
-				<h1>The Knickerbocker Tribune</h1>
-				<nav>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</nav>
-			</header>
 			<article>
-				<h2>A Sad Day for the Bonapartes</h2>
-				<p class="h3">The Services of the Only Eligible Bonaparte Have Been Spurned by Four Countries.</p>
-				<p>Prince Louis Bonaparte, great nephew
+				<img src="img/napoleons.jpg" alt="archive image of article in The Washington Herald from 1915" class="archive-image">
+				<h2>A Sad Year for Napoleons!</h2>
+				<p class="h3">Not Only Have There Been No
+				Modern "Little Corporals"
+				Created, But the Services of the
+				Only Eligible Bonaparte Have
+				Been Spurned by Four Countries.</p>
+				<p class="article-date" data-cite="http://chroniclingamerica.loc.gov/lccn/sn83045433/1915-07-04/ed-1/seq-24/#date1=1836&sort=relevance&rows=20&words=Bonaparte+Bonapartes&searchType=basic&sequence=0&index=10&state=&date2=1922&proxtext=bonaparte&y=0&x=0&dateFilterType=yearRange&page=5">The Washington Herald, Sunday, July 4, 1915</p>
+				<p>All Europe at war, and Prince Louis Bonaparte, great nephew
 				of the greatest of all warriors,
 				cannot get a chance to fight!
 				He has offered his sword to both France
