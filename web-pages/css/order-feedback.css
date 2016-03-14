@@ -1,0 +1,90 @@
+header {
+  float: left;
+}
+header nav {
+  font-size: 110%;
+  margin-top: 2em;
+  margin-left: 2em;
+}
+header nav ul {
+  width: 10em;
+}
+header nav ul li {
+  padding: 0.2em 1em;
+  border: 1px solid #666;
+}
+
+h1 {
+  border-bottom: none;
+  text-transform: none;
+  color: #333;
+  margin-bottom: 0;
+  margin-left: 9em;
+  padding-top: 1em;
+}
+
+main {
+  color: #333;
+  margin-left: 21em;
+  padding-top: 1em;
+}
+
+h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.order-details {
+  display: flex;
+}
+.order-details .product {
+  width: 70%;
+  font-size: 140%;
+  padding-right: 2em;
+}
+.product img {
+  float: left;
+  margin-right: 1em;
+}
+.product .reference {
+  font-size: 70%;
+}
+.order-details .shipping {
+  width: 30%;
+}
+
+.questions {
+  font-size: 105%;
+}
+.questions .radio legend {
+  float: left;
+  width: 19%;
+}
+.questions .radio label {
+  display: block;
+  margin-left: 20%;
+  margin-bottom: 0.2em;
+  width: 80%;
+}
+.questions .form-row label {
+  width: 19%;
+  margin-right: 0;
+}
+.questions textarea {
+  width: 80%;
+  height: 6em;
+}
+.questions button {
+  margin-left: 20%;
+}
+
+footer {
+  margin-left: 21em;
+  margin-top: 4em;
+}
+footer .links {
+  display: flex;
+}
+footer .links div {
+  width: 25%;
+}
