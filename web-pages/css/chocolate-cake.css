@@ -1,11 +1,9 @@
-html {
-    font-size: 100%;
-}
 body {
     background-color: black;
     line-height: 1;
+    background-color: #aaa;
+    font-size: 1.5rem;
 }
-
 h1 {
     margin: 0;
     padding: 0;
@@ -15,10 +13,16 @@ h2 {
     margin: 0;
     font-size: 1.2rem;
 }
+.page-wrapper {
+    overflow: hidden;
+    width: 50%;
+    background-color: #eee;
+}
 .ingredients {
     overflow: hidden;
     float: left;
-    width: 30%;
+    width: 35%;
+    color: #900;
 }
 li {
     margin: 0;
