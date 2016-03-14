@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Time Goes order details</title>
+	<link rel="stylesheet" href="css/normalization.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/order-feedback.css">
+</head>
+<body>
+	<div class="container">
+		<div class="page-wrapper">
+			<header>
+				<div class="logo">
+					<img src="img/time-logo.png" width="250" height="148" alt="As Time Goes Buy">
+				</div>
+				<nav>
+					<ul>
+						<li>Home</li>
+						<li>Products</li>
+						<li>Repairs</li>
+						<li>Your account</li>
+					</ul>
+				</nav>
+			</header>
+
+			<h1>Your order</h1>
+			<main>
+				<section class="order-details">
+					<div class="product">
+						<h2>Details</h2>
+						<img src="img/cockoo-clock.jpg" width="200" height="200" alt="Cockoo Clock">
+						<p class="link"><a href="#">Designer Cuckoo Clock by Emilé Colluceo</a></p>
+						<p class="price">&pound;599.00</p>
+						<p class="reference"><span>Reference</span> 872634726423</p>
+					</div>
+					<div class="shipping">
+						<h2>Shipping</h2>
+						<p class="name">Moray Gregor</p>
+						<p>13 Abbotsford Cres<br>Edinburgh<br>EH8 5PG</p>
+						<p class="tracking"><span>Tracking</span> <a href="#">HFF7127GYR19I</a></p>
+					</div>
+				</section>
+				
+				<section class="questions">
+					<h2>Questions</h2>
+					
+					<p>Please use the form below if you have any questions regarding your order.</p>
+					<form action="#" onsubmit="$('main').remove();">
+						<fieldset class="radio">
+							<legend>Topic</legend>
+							<label><input type="radio" name="topic" value="topic-1"> When will my item be delivered?</label>
+							<label><input type="radio" name="topic" value="topic-2"> I need to return this item</label>
+							<label><input type="radio" name="topic" value="topic-3"> Cancel order</label>
+							<label><input type="radio" name="topic" value="topic-4"> Other</label>
+						</fieldset>
+						<div class="form-row">
+							<label for="message">Message</label>
+							<textarea name="messsage" id="mesage" cols="30" rows="10"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+			</main>
+			
+			<footer>
+				<div class="links">
+					<div>
+						<h3>Information</h3>
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Delivery</a></li>
+							<li><a href="#">Terms and conditions</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3>Customer service</h3>
+						<ul>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">How to find us</a></li>
+							<li><a href="#">Accessibility</a></li>
+						</ul>
+					</div>
+				</div>
+				<p>Copyright &copy; As time goes buy</p>
+			</footer>
+		</div>
+	</div>
+	<div>Clock image: https://en.wikipedia.org/wiki/File:Cuckoo_clock_by_Pascal_Tarabay.jpg</div>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</body>
+</html>
