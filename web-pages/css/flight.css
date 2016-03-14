@@ -55,7 +55,7 @@ h1 {
 	text-shadow: 0 0 10px #000000;
 	text-align: right;
 }
-h2 {
+h2, .h2 {
 	font-weight: normal;
 	font-size: 1.6rem;
 }
@@ -162,5 +162,5 @@ article [type="submit"] {
 	text-align: center;
 	background-color: #562511;
 	color: white;
-	padding: .25ex 0	
+	padding: .25ex 0
 }
