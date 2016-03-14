@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Make a Deposit</title>
+	<link rel="stylesheet" href="css/normalization.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/form.css" />
+	<link rel="stylesheet" href="css/checking.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="page-wrapper" id="main" role="main" tabindex="-1">
+			<nav>
+				<svg class="bank-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 218 210" focusable="false" role="presentation">
+					<polygon points="11,69 11,43 108.7,0 206,43 206,69 "/>
+					<path d="M67,81v-1c0-2.8-2.2-5-5-5H30c-2.8,0-5,2.2-5,5v1c0,2.8,2.2,5,5,5h2c-0.8,9-7,76.9-7,79.5v1c0,2.8,2.7,5.5,5.5,5.5h32
+						c2.8,0,4.5-2.7,4.5-5.5v-1c0-2.6-5.9-70.5-6.7-79.5H62C64.8,86,67,83.8,67,81z"/>
+					<path d="M131,81v-1c0-2.8-2.2-5-5-5H94c-2.8,0-5,2.2-5,5v1c0,2.8,2.2,5,5,5h2c-0.8,9-7,76.9-7,79.5v1c0,2.8,2.7,5.5,5.5,5.5h32
+						c2.8,0,4.5-2.7,4.5-5.5v-1c0-2.6-5.9-70.5-6.7-79.5h1.7C128.8,86,131,83.8,131,81z"/>
+					<path d="M196,81v-1c0-2.8-2.2-5-5-5h-32c-2.8,0-5,2.2-5,5v1c0,2.8,2.2,5,5,5h2c-0.8,9-7,76.9-7,79.5v1c0,2.8,2.7,5.5,5.5,5.5h32
+						c2.8,0,4.5-2.7,4.5-5.5v-1c0-2.6-5.9-70.5-6.7-79.5h1.7C193.8,86,196,83.8,196,81z"/>
+					<path d="M207,186c0,2.2-1.8,4-4,4H15c-2.2,0-4-1.8-4-4v-5c0-2.2,1.8-4,4-4h188c2.2,0,4,1.8,4,4V186z"/>
+					<path d="M218,206c0,2.2-1.8,4-4,4H4c-2.2,0-4-1.8-4-4v-7c0-2.2,1.8-4,4-4h210c2.2,0,4,1.8,4,4V206z"/>
+				</svg>
+				<ul class="nav-items">
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">My Account</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Tools</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Loans</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Investing</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Help</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h1>Deposit Funds</h1>
+				<ol class="flow-steps">
+					<li class="flow-step">Account Information</li>
+					<li class="flow-step">Verify</li>
+					<li class="flow-step">Confirm</li>
+				</ol>
+				<form>
+					<div class="form-row">
+						<label for="firstName">First Name</label><input type="text" name="firstName" id="firstName" />
+						<label for="lastName">Last Name</label><input type="text" name="lastName" id="lastName" />
+					</div>
+					<div class="form-row">
+						<label for="amount">Amount</label><input type="text" name="amount" id="amount">
+					</div>
+					<fieldset>
+						<legend>Which account do you want to deposit to?</legend>
+						<input type="radio" name="account" id="checking">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" role="presentation" focusable="false" class="svg-radio">
+							<circle class="stroke" fill="#FFFFFF" stroke-width="0" stroke-miterlimit="10" cx="12.5" cy="12.5" r="11.5"></circle>
+							<circle class="stroke" fill="transparent" stroke="#cc0000" stroke-width="1" stroke-miterlimit="10" cx="12.5" cy="12.5" r="4"></circle>
+							<circle class="center" cx="12.5" cy="12.5" r="2.5"></circle>
+						</svg>
+						<label for="checking">checking</label>
+						<input type="radio" name="account" id="savings">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" role="presentation" focusable="false" class="svg-radio">
+							<circle class="stroke" fill="#FFFFFF" stroke-width="0" stroke-miterlimit="10" cx="12.5" cy="12.5" r="11.5"></circle>
+							<circle class="stroke" fill="transparent" stroke="#cc0000" stroke-width="1" stroke-miterlimit="10" cx="12.5" cy="12.5" r="4"></circle>
+							<circle class="center" cx="12.5" cy="12.5" r="2.5"></circle>
+						</svg>
+						<label for="checking">savings</label>
+					</fieldset>
+					<div class="form-row">
+						<label for="memo">Memo</label><textarea name="memo" id="memo" cols="30" rows="3"></textarea>
+					</div>
+					<div class="form-row">
+						<button type="reset">Reset</button>
+						<button type="submit">Submit</button>
+					</div>
+
+
+				</form>
+			</article>
+		</div>
+		<div class="overlay"></div>
+		<div class="block-screen"></div>
+		<div aria-live="polite" class="accessibly-hidden"></div>
+		<div role="alert" class="accessibly-hidden"></div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/namespacing.js"></script>
+	<script type="text/javascript" src="js/accessibility-helpers.js"></script>
+	<script type="text/javascript" src="js/checking.js"></script>
+</body>
+</html>

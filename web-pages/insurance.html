@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Insurance Claim</title>
+	<link rel="stylesheet" href="css/normalization.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/form.css" />
+	<link rel="stylesheet" href="css/insurance.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="page-wrapper" id="main" role="main" tabindex="-1">
+			<nav>
+				<ul class="nav-items-top">
+					<li class="nav-item current"><a class="btn btn-primary nav-link" href="#">Individual</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Family</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Small Business</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Resources</a></li>
+				</ul>
+				<ul class="nav-items-second">
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Health</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Dental</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Vision</a></li>
+					<li class="nav-item current"><a class="btn btn-primary nav-link" href="#">Short Term</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Life</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">More&hellip;</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h1>File Your Insurance Claim</h1>
+				<form>
+					<h2>Insured's Information</h2>
+					<fieldset class="form-cell">
+						<legend>Gender</legend>
+						<label for="male" class="radio-label">
+							<input type="radio" name="gender" id="male">
+							Male
+						</label>
+						<label for="female" class="radio-label">
+							<input type="radio" name="gender" id="female">
+							Female
+						</label>
+					</fieldset>
+					<div class="form-cell">
+						<label for="firstName">First Name</label>
+						<input type="text" name="firstName" id="firstName">
+					</div>
+					<div class="form-cell">
+						<label for="lastName">Last Name</label>
+						<input type="text" name="lastName" id="lastName">
+					</div>
+					<h2>Policy Information</h2>
+					<div class="form-row">
+						<div class="form-cell">
+							<label for="policyNumber">Policy Number</label>
+							<input type="text" name="policyNumber" id="policyNumber">
+						</div>
+						<fieldset class="form-cell">
+							<legend>Policy Type</legend>
+							<label for="hmo" class="radio-label">
+								<input type="radio" name="policyType" id="hmo">
+								HMO
+							</label>
+							<label for="ppo" class="radio-label">
+								<input type="radio" name="policyType" id="ppo">
+								PPO
+							</label>
+						</fieldset>
+					</div>
+					<h2>Claim Information</h2>
+					<div class="form-row">
+						<div class="form-cell">
+							<label for="claimType">Type of Claim</label>
+							<select name="claimType" id="claimType">
+								<option value="accident">accident</option>
+								<option value="illness">illness</option>
+								<option value="other">other</option>
+							</select>
+						</div>
+						<div class="form-cell">
+							<label for="date">Date of Claim</label>
+							<input type="text" name="date" id="date">
+							<svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404 400" focusable="false" role="presentation">
+								<path d="M344,44v16.5c0,23.2-18.8,42-42,42s-42-18.8-42-42V44H144v16.5c0,23.2-18.8,42-42,42s-42-18.8-42-42V44H0v356h404V44H344z"/>
+								<rect x="29" y="142" fill="#FFFFFF" width="347" height="230"/>
+								<g>
+									<rect x="285" y="167" width="44" height="40"/>
+									<rect x="215" y="167" width="44" height="40"/>
+									<rect x="145" y="167" width="44" height="40"/>
+									<rect x="285" y="237" width="44" height="40"/>
+									<rect x="215" y="237" width="44" height="40"/>
+									<rect x="145" y="237" width="44" height="40"/>
+									<rect x="75" y="237" width="44" height="40"/>
+									<rect x="285" y="307" width="44" height="40"/>
+									<rect x="215" y="307" width="44" height="40"/>
+									<rect x="145" y="307" width="44" height="40"/>
+									<rect x="75" y="307" width="44" height="40"/>
+								</g>
+								<path d="M130,59c0,15.5-12.5,28-28,28l0,0c-15.5,0-28-12.5-28-28V28c0-15.5,12.5-28,28-28l0,0c15.5,0,28,12.5,28,28V59z"/>
+								<path d="M330,59c0,15.5-12.5,28-28,28l0,0c-15.5,0-28-12.5-28-28V28c0-15.5,12.5-28,28-28l0,0c15.5,0,28,12.5,28,28V59z"/>
+							</svg>
+							<div class="date-picker">
+								<div class="month">April</div>
+								<img src="img/calendar-example.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<label for="description">Description</label><textarea name="description" id="description" cols="30" rows="10"></textarea>
+					</div>
+				</form>
+			</article>
+		</div>
+		<div class="overlay"></div>
+		<div class="block-screen"></div>
+		<div aria-live="polite" class="accessibly-hidden"></div>
+		<div role="alert" class="accessibly-hidden"></div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/namespacing.js"></script>
+	<script type="text/javascript" src="js/accessibility-helpers.js"></script>
+	<script type="text/javascript" src="js/insurance.js"></script>
+</body>
+</html>
