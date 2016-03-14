@@ -20,7 +20,7 @@ h1 {
   color: #333;
   margin-bottom: 0;
   margin-left: 9em;
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 
 main {
@@ -31,7 +31,7 @@ main {
 
 h2 {
   color: #333;
-  margin-top: 0;
+  margin: 0 0 0.25em 0;
 }
 
 .order-details {
@@ -55,6 +55,7 @@ h2 {
 
 .questions {
   font-size: 105%;
+  margin-top: 1em;
 }
 .questions .radio legend {
   float: left;
@@ -80,11 +81,18 @@ h2 {
 
 footer {
   margin-left: 21em;
-  margin-top: 4em;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #333;
 }
-footer .links {
-  display: flex;
+footer h3 {
+  display: inline-block;
+  margin: 0 2em 0.25em 0;
 }
-footer .links div {
-  width: 25%;
+footer ul {
+  display: inline;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 2em;
 }
