@@ -21,4 +21,12 @@
     $('#gift').on('click', function (evt) {
         $('.fake-btn, [aria-controls="placeOrder"]').toggleClass('is-hidden');
     });
+    $('#moreInfoButton').on('click', function (evt) {
+        $('#thankYouContent, #moreInfo').toggleClass('is-hidden');
+    });
+    $('#placeOrder .close-dialog').on('click', function (evt) {
+        if($('#thankYouContent').hasClass('is-hidden')) {
+            $('#thankYouContent, #moreInfo').toggleClass('is-hidden');
+        }
+    });
 }(jQuery, NAME));

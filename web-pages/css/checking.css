@@ -1,0 +1,142 @@
+/*
+dk blue: #102941;
+light gray: #EEEEEE;
+red: #AE0200;
+green: #438206;
+*/
+body {
+	background-color: #eee;
+}
+nav {
+	position: relative;
+	background-color: #102941;
+	overflow: hidden;
+	height: 120px;
+}
+nav:before,
+nav:after {
+	content: "";
+	position: absolute;
+	left: 26px;
+	width: 5px;
+	height: 100%;
+	background-color: #AE0200;
+}
+nav:after {
+	width: 3px;
+	left: 35px;
+}
+.bank-logo {
+	position: absolute;
+	width: 70px;
+	left: 65px;
+	bottom: 25px;
+}
+.bank-logo * {
+	fill: #fff;
+}
+.nav-items {
+	position: absolute;
+	left: 160px;
+	bottom:30px;
+	margin: 0;
+}
+.nav-item {
+	display: inline-block;
+	margin: 0;
+	margin-right: 2em;
+}
+
+.nav-link {
+	display: block;
+	background-color: #102941;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+article {
+	padding: 0 31px 70px;
+	position: relative;
+}
+article:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+	background-color: #102941;
+}
+h1 {
+	font-size: 2.1rem;
+	text-transform: none;
+	font-weight: normal;
+	margin: 3ex 0 3ex;
+}
+.flow-steps {
+	padding-left: 0;
+	margin-left: 0;
+}
+.flow-step {
+	display: inline-block;
+	position: relative;
+	padding-left: 30px;
+	margin-right: 2em;
+	color: #aaa;
+}
+.flow-step:before {
+	content: "2";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -15px;
+	padding-top: 6px;
+	width: 24px;
+	height: 24px;
+	box-sizing: border-box;
+	background-color: #aaa;
+	border-radius: 12px;
+	color: white;
+	font-size: 1em;
+	text-align: center;
+	line-height: 1;
+}
+.flow-step:first-child {
+	color: #AE0200;
+	font-weight: bold;
+}
+.flow-step:first-child:before {
+	content: "1";
+	background-color: #AE0200;
+}
+.flow-step:last-child:before {
+	content: "3";
+}
+input[type="text"] {
+	width: 200px;
+	margin-right: 2em;
+}
+label {
+	margin-right: .2em;
+}
+fieldset {
+	overflow: visible;
+	margin-bottom: 1em;
+}
+legend {
+	float: left;
+	margin-right: 2em;
+	margin-top: 1ex;
+}
+textarea {
+	width: 39em;
+}
+input[type="radio"]+svg {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	top: 11px;
+	left: -27px;
+}
+svg+label {
+	margin-left: -31px;
+}

@@ -1,0 +1,126 @@
+/*
+light gray: #f2f2f2;
+med gray: #e6e6e6;
+dark gray: #777777;
+orange: #df7000;
+*/
+body {
+	background-color: #e6e6e6;
+}
+.search-bar {
+	border-bottom: 1px solid #D5D5D5;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 2.5ex 2em;
+}
+.search-bar button {
+	background-color: #df7000;
+	font-size: 1.3rem;
+	height: 30px;
+	vertical-align: bottom;
+}
+.banner {
+	background: #DF7001 url(../img/chocolate-cake.jpg) left top no-repeat;
+	background-size: 81%;
+	overflow: hidden;
+}
+h1 {
+	position: absolute;
+	border: none;
+	text-transform: none;
+	color: white;
+	padding: .75ex .75em;
+	width: 80%;
+}
+.breadcrumbs {
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.breadcrumb {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.breadcrumb:last-child {
+	background-color: #e6e6e6;
+}
+.bread-link {
+	color: black;
+	font-weight: normal;
+	padding: 2ex 0 2ex 1.2em;
+	display: block;
+}
+.breadcrumb:first-child .bread-link {
+	padding-left: 2em;
+}
+.bread-link:after {
+	content: "\00bb";
+	padding: 0 .5em 0 1em;
+}
+.breadcrumb:last-child .bread-link:after {
+	content: "";
+}
+.cta {
+	float: right;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+}
+.cta-item {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid white;
+}
+.cta-item:first-child {
+	border: none;
+}
+.cta button {
+	border: none;
+	display: block;
+	color: white;
+	background-color: #df7000;
+	padding: 2ex 0;
+	height: auto;
+	width: 100%;
+	font-weight: bold;
+}
+article {
+	overflow: hidden;
+	padding: 2ex 3em;
+}
+h2 {
+	font-weight: normal;
+	color: #777;
+	padding-bottom: .75ex;
+	border-bottom: 1px solid #df7000;
+	margin-bottom: 2ex;
+}
+.ingredients ul {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+.ingredients li {
+	padding: 1ex 0;
+	margin-bottom: 1ex;
+}
+.ingredients li:before {
+	content: "+";
+	display: inline-block;
+	color: white;
+	font-weight: bold;
+	width: 24px;
+	height: 24px;
+	background-color: #777;
+	border-radius: 12px;
+	margin-right: 10px;
+	position: relative;
+	top: -1px;
+	text-align: center;
+	padding-top: .25ex;
+}
+.directions li {
+	margin-bottom: 3ex;
+}
