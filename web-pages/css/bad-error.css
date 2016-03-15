@@ -1,0 +1,63 @@
+body, .page-wrapper {
+  background-color: #5A1900;
+  color: #efefef;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 120%;
+}
+.page-wrapper {
+  width: 38em;
+}
+
+header {
+  margin-top: 2em;
+}
+
+h1 {
+  color: #efefef;
+  text-transform: none;
+  border-bottom: none;
+  font-family: Rockwell, "Lucida Bright", sans-serif;
+  font-weight: normal;
+  font-size: 300%;
+}
+
+h1 img {
+  width: 1.6em;
+  vertical-align: bottom;
+}
+
+main {
+  margin-left: 5.5em;
+}
+
+form {
+  margin: 1em 0 0 1em;
+}
+
+label {
+  margin-right: 0.5em;
+  width: 8em;
+}
+
+select {
+  padding: 0.8ex 0.5em;
+}
+
+button {
+  float: right;
+  margin-right: 4.7em;
+  margin-top: 1em;
+}
+button.btn-primary {
+  color: #020202;
+  background: #BC5D24;
+  border-radius: 2px;
+}
+
+.error {
+  background: #B28262 url('../img/warning-icon.png') no-repeat fixed center 1em;
+  border: 1px solid #BC5D24;
+  border-radius: 2px;
+  padding: 1em 1em 1em 3em;
+  margin: 0 1em;
+}
