@@ -148,6 +148,7 @@ article [type="submit"] {
 }
 .calendar-icon {
 	width: 15px;
+	height: 15px;
 	position: absolute;
 	right: 3px;
 	bottom: 5px;
