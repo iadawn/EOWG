@@ -23,6 +23,8 @@
     });
     $('#moreInfoButton').on('click', function (evt) {
         $('#thankYouContent, #moreInfo').toggleClass('is-hidden');
+        $('#moreInfo').closest('.modal').find('.close-dialog').focus();
+
     });
     $('#placeOrder .close-dialog').on('click', function (evt) {
         if($('#thankYouContent').hasClass('is-hidden')) {
