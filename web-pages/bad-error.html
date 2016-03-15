@@ -24,7 +24,7 @@
 
 				<p class="error good">Invalid date, required format is 'day/month/year' e.g. 08/06/1955</p>
 
-				<form action="#" onsubmit="$('main').css('visibility', 'hidden');">
+				<form action="#" onsubmit="if($('.error.good').is(':visible')){$('.error.good').hide(); return;} if(!$('.error.bad').is(':visible')){$('.error.bad').fadeIn();} else {$('.error.bad').hide();$('.error.good').fadeIn();}">
 					<div class="form-row">
 						<label for="name">Name</label>
 						<input type="text" id="name">

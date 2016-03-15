@@ -55,9 +55,10 @@ button.btn-primary {
 }
 
 .error {
-  background: #B28262 url('../img/warning-icon.png') no-repeat fixed center 1em;
+  background: #B28262 url('../img/warning-icon.png') no-repeat 1em center;
   border: 1px solid #BC5D24;
   border-radius: 2px;
-  padding: 1em 1em 1em 3em;
+  padding: 1em 1em 1em 3.5em;
   margin: 0 1em;
+  display: none;
 }
