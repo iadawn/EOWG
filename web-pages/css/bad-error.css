@@ -49,6 +49,10 @@ button.btn-primary {
   background: #BC5D24;
   border-radius: 2px;
 }
+button.btn-primary:focus,
+button.btn-primary:hover {
+  background: #b28262;
+}
 
 .error {
   background: #B28262 url('../img/warning-icon.svg') no-repeat 1em center;
