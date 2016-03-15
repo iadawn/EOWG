@@ -14,6 +14,10 @@
     });
     $('#depart, #return').on('keypress', function (evt) {
         evt.preventDefault();
-        $('[aria-controls="errorModal"]').click();
+        $('[aria-controls="errorModal"]').attr('data-surrogate', $(this).attr('id')).click();
+    });
+    $('[aria-controls="errorModal"]').on('focus', function (evt) {
+        $('#' + $(this).attr("data-surrogate")).focus();
+        $(this).removeAttr('data-surrogate');
     });
 }(jQuery, NAME));
