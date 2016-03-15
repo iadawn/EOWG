@@ -24,7 +24,7 @@
 
 				<p class="error good">Invalid date, required format is 'day/month/year' e.g. 08/06/1955</p>
 
-				<form action="#" onsubmit="if($('.error.good').is(':visible')){$('.error.good').hide(); return;} if(!$('.error.bad').is(':visible')){$('.error.bad').fadeIn();} else {$('.error.bad').hide();$('.error.good').fadeIn();}">
+				<form action="#" onsubmit="if($('.error.good').is(':visible')){$('.error.good').hide(); $('#dob').attr('aria-invalid', 'false'); return;} if(!$('.error.bad').is(':visible')){$('.error.bad').fadeIn();} else {$('.error.bad').hide(); $('#dob').attr('aria-invalid', 'true'); $('.error.good').fadeIn();}">
 					<div class="form-row">
 						<label for="name">Name</label>
 						<input type="text" id="name">
@@ -37,27 +37,6 @@
 						<label for="dob">Date of birth</label>
 						<input type="text" id="dob">
 					</div>
-					<div class="form-row">
-						<label for="coffee">Favourite coffee</label>
-						<select name="coffee" id="coffee">
-							<option value=""></option>
-							<option value="1">Ristretto</option>
-							<option value="1">Flat white</option>
-							<option value="1">Café cubano</option>
-							<option value="1">Cortado</option>
-							<option value="1">Red eye</option>
-							<option value="1">Yuanyang</option>
-							<option value="1">Café con hielo</option>
-							<option value="1">Vietnamese iced coffee</option>
-							<option value="1">Café frappé</option>
-							<option value="1">Espresso con panna</option>
-							<option value="1">Café viennois</option>
-							<option value="1">Affogato</option>
-							<option value="1">Caffè corretto</option>
-							<option value="1">Irish coffee</option>
-							<option value="1">Decaf</option>
-						</select>
-					</div>					
 
 					<button type="submit" class="btn btn-primary">Connect</button>
 				</form>

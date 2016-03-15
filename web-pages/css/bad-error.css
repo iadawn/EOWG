@@ -39,10 +39,6 @@ label {
   width: 8em;
 }
 
-select {
-  padding: 0.8ex 0.5em;
-}
-
 button {
   float: right;
   margin-right: 4.7em;
@@ -55,10 +51,18 @@ button.btn-primary {
 }
 
 .error {
-  background: #B28262 url('../img/warning-icon.png') no-repeat 1em center;
+  background: #B28262 url('../img/warning-icon.svg') no-repeat 1em center;
+  background-size: 1.5em 1.5em;
   border: 1px solid #BC5D24;
   border-radius: 2px;
   padding: 1em 1em 1em 3.5em;
-  margin: 0 1em;
+  margin: 0 4.5em 0 1em;
   display: none;
+}
+
+input[aria-invalid=true] {
+  border: 1px solid red;
+  background: #ffffff url('../img/warning-icon.svg') no-repeat calc(100% - 1em) center;
+  background-size: 1em 1em;
+  padding-right: 2.5em;
 }
