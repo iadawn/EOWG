@@ -20,6 +20,7 @@
     });
     $('#gift').on('click', function (evt) {
         $('.fake-btn, [aria-controls="placeOrder"]').toggleClass('is-hidden');
+        $('body').toggleClass('re-skin');
     });
     $('#moreInfoButton').on('click', function (evt) {
         $('#thankYouContent, #moreInfo').toggleClass('is-hidden');

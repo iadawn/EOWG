@@ -1,11 +1,3 @@
-/*
-colors:
-blue-gray: #E8ECF0;
-med gray: #8490A3;
-dk-blue: #182E4F;
-gold: #F29A18;
-*/
-
 body {
 	background-color: #fff;
 	color: #182E4F;
@@ -170,4 +162,64 @@ article h2 {
 	margin-bottom: 2ex;
 	font-weight: bold;
 	font-size: 1.75rem
+}
+
+/* reskin */
+.re-skin {
+	background-color: #bcb;
+	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+}
+.re-skin header {
+    border-radius: 14px 14px 0 0;
+    background-color: #633721;
+}
+.re-skin main {
+    border-radius: 0 0 14px 14px;
+    margin-top: 2px;
+    border: 1px solid #999;
+    background-color: white;
+}
+.re-skin .page-wrapper {
+	background-color: transparent;
+}
+.re-skin .btn-primary:focus,
+.re-skin .btn-primary:hover {
+	outline: none;
+	border: 2px solid white;
+	line-height: 1.2;
+}
+.re-skin .apple-cart-logo {
+	left: -25px;
+	bottom: -19px;
+	width: 106px;
+	height: 94px;
+}
+.re-skin .apple,
+.re-skin .leaf {
+	fill: white;
+}
+.re-skin .book,
+.re-skin .book-line {
+	display: none;
+}
+.re-skin h1,
+.re-skin h2,
+.re-skin h3,
+.re-skin h4,
+.re-skin .h1,
+.re-skin .h2,
+.re-skin .h3,
+.re-skin .h4  {
+	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+	color: #633721;
+}
+.re-skin h1 {
+	text-align: left;
+	margin-left: 80px;
+	font-weight: normal;
+	text-transform: none;
+	color: white;
+}
+.re-skin h1:before {
+	content: "The Apple Tree: "
 }
