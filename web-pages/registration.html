@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>em·pa·thy - social media with feeling</title>
+	<link rel="stylesheet" href="css/normalization.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/registration.css">
+</head>
+<body>
+	<div class="container">
+		<div class="page-wrapper">
+			<header>
+				<h1>em·pa·thy</h1>
+				<p>Social media with Feeling</p>
+			</header>
+			<main>
+				<p>Please complete the following details to register.</p>
+				
+				<p class="error bad">Error ead#234532 invalid data</p>
+
+				<p class="error good">Invalid date, required format is 'day/month/year' e.g. 08/06/1955</p>
+
+				<form action="#" onsubmit="if($('.error.good').is(':visible')){$('.error.good').hide(); $('#dob').attr('aria-invalid', 'false'); return;} if(!$('.error.bad').is(':visible')){$('.error.bad').fadeIn();} else {$('.error.bad').hide(); $('#dob').attr('aria-invalid', 'true'); $('.error.good').fadeIn();}">
+					<div class="form-row">
+						<label for="name">Name</label>
+						<input type="text" id="name">
+					</div>
+					<div class="form-row">
+						<label for="email">E-mail</label>
+						<input type="text" id="email">
+					</div>
+					<div class="form-row">
+						<label for="dob">Date of birth</label>
+						<input type="text" id="dob">
+					</div>
+
+					<button type="submit" class="btn btn-primary">Register</button>
+				</form>
+			</main>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+</body>
+</html>
