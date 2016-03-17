@@ -170,7 +170,7 @@ nav.open {
 	padding-bottom: 5.4ex;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1024px) {
     /* For desktop: */
 	.hamburger {
 		display: none;
