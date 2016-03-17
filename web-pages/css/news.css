@@ -14,6 +14,7 @@ h1 {
 }
 h2 {
 	font-size: 2.7rem;
+	margin-top: 4ex;
 }
 .hamburger {
 	position: absolute;
@@ -155,6 +156,20 @@ nav.open {
 .article-date {
 	font-style: italic;
 }
+.search-results h2 {
+	font-size: 2.2rem;
+}
+.search-results .cite {
+	display: none;
+}
+.search-results .cite-img {
+	margin-bottom: 2ex;
+}
+.search-results article {
+	border-bottom: 1px solid #163554;
+	padding-bottom: 5.4ex;
+}
+
 @media only screen and (min-width: 900px) {
     /* For desktop: */
 	.hamburger {
