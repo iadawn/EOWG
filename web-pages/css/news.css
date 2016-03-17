@@ -185,6 +185,7 @@ nav.open {
 		display: block;
 		border: none;
 		background-color: white;
+		overflow: hidden;
 	}
 	.nav-item {
 		display: inline-block;
