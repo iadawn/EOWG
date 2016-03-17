@@ -82,7 +82,7 @@ h2, .h2 {
 }
 .btn-primary:hover,
 .btn-primary:focus {
-	background-color: #c00;
+	background-color: #900;
 }
 .expy-date {
 	margin-bottom: 1.5ex;
@@ -135,7 +135,7 @@ h2, .h2 {
 }
 .svg.close-dialog:focus circle,
 .svg.close-dialog:hover circle {
-	fill: #c00;
+	fill: #900;
 }
 #howTos ul {
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
