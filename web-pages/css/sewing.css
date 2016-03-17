@@ -46,7 +46,7 @@ nav li {
 	display: inline-block;
 	line-height: 1;
 }
-h1 {
+h1, .h1 {
 	margin: 0 0 .5ex 131px;
 	padding: 1ex 0 .3ex;
 	text-align: right;
@@ -54,7 +54,7 @@ h1 {
 	text-transform: none;
 	letter-spacing: .05em;
 }
-h2 {
+h2, .h2 {
 	font-family: Papyrus, "Big Caslon", Palatino;
 	font-size: 2.5rem;
 }
@@ -101,4 +101,51 @@ h2 {
 .get-big {
 	padding: 1.5ex 1em;
 	font-size: 1.2rem;
+}
+.swatches {
+	overflow: hidden;
+}
+.swatches a {
+	float: left;
+	margin: 2ex 0;
+	width: 25%;
+	box-sizing: border-box;
+}
+.swatches img {
+	width: 70px;
+	margin-right: 1em;
+}
+.modal {
+	border-radius: 14px;
+	box-shadow: 2px 2px 2px 2px #000;
+	width: 60%;
+}
+.modal .h1 {
+	margin-left: 0;
+	text-align: left;
+}
+.block-screen {
+	opacity: 0.75;
+	background-color: black;
+}
+.svg.close-dialog:focus,
+.svg.close-dialog:hover {
+	outline: none;
+	box-shadow: none;
+}
+.svg.close-dialog:focus circle,
+.svg.close-dialog:hover circle {
+	fill: #c00;
+}
+#howTos ul {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+.notions-img {
+	float: right;
+	position: relative;
+	margin-top: -11ex;
+	margin-bottom: 1ex;
+	left: -35px;
 }
