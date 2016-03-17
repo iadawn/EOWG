@@ -147,7 +147,7 @@ svg+label {
 }
 .svg-radio .stroke {
 	r: 3;
-	stroke-width: 1.5;
+	stroke-width: 1;
 	stroke: #767676;
 }
 .svg-radio .center {
