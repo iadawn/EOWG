@@ -13,7 +13,7 @@ body {
     border-bottom: 1px solid #D5D5D5;
     text-align: right;
     box-sizing: border-box;
-    padding: 0;
+    padding: .5ex .5em;
 }
 .search-bar button {
     background-color: #0D8000;
@@ -24,6 +24,7 @@ body {
 .banner {
     background-color: #0D8000;
     overflow: hidden;
+    padding-right: .5em;
 }
 h1 {
     border: none;
@@ -31,12 +32,12 @@ h1 {
     color: white;
     float: left;
     margin: 0;
-    padding: .5ex 0;
+    padding: .5ex 0 .5ex .25em;
 }
 .breadcrumbs {
     background-color: #f2f2f2;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 .5em;
     overflow: hidden;
 }
 .breadcrumb {
@@ -99,7 +100,14 @@ h2 {
 .ingredients {
     width: 20%;
     float: left;
-    border: 2px solid #0D8000;
+    background-color: hsla(114,20%,32%,1);
+    color: white;
+    padding: .25ex .5em;
+    margin-right: .5em;
+}
+.ingredients h2 {
+    color: white;
+    border-bottom-color: white;
 }
 .ingredients ul,
 .directions ul {
@@ -109,6 +117,14 @@ h2 {
 .ingredients li {
     margin: 0;
     padding: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1;
+}
+.ingredients li:before {
+    content: "\2022";
+    font-weight: bold;
+    margin-right: .5ex;
+}
+.directions {
+    padding: .25ex .5em;
 }
