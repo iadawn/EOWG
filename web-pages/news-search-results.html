@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Search Results for "Napoleon"</title>
+	<link rel="stylesheet" href="css/normalization.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/form.css" />
+	<link rel="stylesheet" href="css/news.css" />
+</head>
+<body id="searchResults">
+	<div class="container">
+		<header>
+			<h1>The Time Machine Tribune</h1>
+			<button type="button" class="hamburger"><span class="accessibly-hidden">Show Menu</span></button>
+			<nav>
+				<button type="button" class="close-menu">
+					<span class="accessibly-hidden">Hide Menu</span>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" focusable="false" role="presentation">
+						<circle cx="35" cy="35" r="35"/>
+						<path fill="#FFFFFF" d="M43.7,54.9L39,47.7c-1.9-2.8-3.1-4.8-4.5-7.2h-0.2c-1.1,2.3-2.3,4.4-3.9,7.2l-4.1,7.2H13l14.7-20.2
+						L13.5,15.1h13.2l4.5,7.3c1.6,2.5,2.6,4.4,3.9,6.7h0.2c1.2-2.5,2.2-4.4,3.4-6.7l4.4-7.3h13.2L41.8,34.5L57,54.9H43.7z"/>
+					</svg>
+				</button>
+				<ul class="nav-items">
+					<li class="nav-item current"><a href="#" class="nav-link">Search Pages</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Advanced Search</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Digitized Newspapers 19th C</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Digitized Newspapers 20th C</a></li>
+				</ul>
+			</nav>
+			<form action="" id="searchBar" class="search-bar">
+				<label for="from">
+					From Year
+					<input type="text" name="from" id="from">
+				</label>
+				<label for="to">
+					<span class="plus">+</span>
+					To Year
+					<input type="text" name="to" id="to">
+				</label>
+				<label for="keywords">
+					<span class="plus">+</span>
+					Keywords
+					<input type="text" name="keywords" id="keywords">
+				</label>
+				<button class="">Search</button>
+			</form>
+		</header>
+		<div class="page-wrapper search-results" id="main" role="main" tabindex="-1" data-cite="http://chroniclingamerica.loc.gov/search/pages/results/list/?date1=1836&rows=20&searchType=basic&state=New+York&date2=1922&proxtext=napoleon&y=0&x=0&dateFilterType=yearRange&page=1&sort=relevance">
+			<article id="napoleonDead">
+				<h2>"Napoleon Dead. His Majesty Napoleon III Expires at His Residence in England"</h2>
+				<div class="cite h4">
+					The New York Herald, New York, NY<br />
+					January 10, 1873: Page 3<br />
+					Print
+				</div>
+				<img src="img/cite-napoleonDead.png" alt="citation one" class="cite-img" />
+				<p>The ex-Emperor Napoleon Bonaparte the Third died at twenty-five minutes past twelve o'clock this afternoon at his residence, Chiselhurst.</p>
+			</article>
+			<article id="exileAnniversary">
+				<h2>"Anniversary of Napoleon's Exile to Elba"</h2>
+				<div class="cite h4">
+					The Sun, New York, NY<br />
+					April 19, 1914: Page 2<br />
+					Print
+				</div>
+				<img src="img/cite-exileAnniversary.png" alt="citation two" class="cite-img" />
+				<p>Crushed at last, but only by Napoleon Bonaparte received the sentence of a world that feared him, dreaded his power, stood aghast at his twenty years of meteoric achievements, and knew not what next to expect should he be permitted to remain where soldiers could be gathered, where munitions of war could be obtained.</p>
+			</article>
+			<article id="restingPlace">
+				<h2>"Resting Places of Two Well Known World 'Conquerors'"</h2>
+				<div class="cite h4">
+					New York Tribune, New York, NY<br />
+					November 17, 1918: Pages 1-3<br />
+					Print
+				</div>
+				<img src="img/cite-restingPlace.png" alt="citation three" class="cite-img" />
+			</article>
+			<article id="napoleonContest">
+				<h2>"Winners in the Sun's Napoleon Contest Show Skill in Building Essays"</h2>
+				<div class="cite h4">
+					The Sun, New York, NY<br />
+					June 07, 1914: Page 3<br />
+					Print
+				</div>
+				<img src="img/cite-napoleonContest.png" alt="citation four" class="cite-img" />
+				<p>In considering the hundreds of essays submitted by school children in the Sun's Napoleon contest the judges have been profoundly impressed with the high average maintained by the contestants in the several somewhat arbitrarily established age classes.</p>
+			</article>
+		</div>
+		<div class="overlay"></div>
+		<div class="block-screen"></div>
+		<div aria-live="polite" class="accessibly-hidden"></div>
+		<div role="alert" class="accessibly-hidden"></div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/namespacing.js"></script>
+	<script type="text/javascript" src="js/accessibility-helpers.js"></script>
+	<script type="text/javascript" src="js/news.js"></script>
+</body>
+</html>

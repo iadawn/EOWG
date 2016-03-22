@@ -34,6 +34,10 @@ nav {
 	color: #163554;
 	font-weight: normal;
 }
+.nav-link:hover,
+.nav-link:focus {
+	color: white;
+}
 section {
 	background: transparent url(../img/versailles.jpg) left top no-repeat;
 	background-size: 100%;
@@ -144,6 +148,7 @@ article [type="submit"] {
 }
 .calendar-icon {
 	width: 15px;
+	height: 15px;
 	position: absolute;
 	right: 3px;
 	bottom: 5px;
@@ -163,4 +168,23 @@ article [type="submit"] {
 	background-color: #562511;
 	color: white;
 	padding: .25ex 0
+}
+.svg.close-dialog circle {
+	fill: #163554;
+}
+.svg.close-dialog:focus,
+.svg.close-dialog:hover {
+	outline: none;
+	box-shadow: none;
+}
+.svg.close-dialog:focus circle,
+.svg.close-dialog:hover circle {
+	stroke: #3279bf;
+	stroke-width: 7px;
+	r: 28px;
+	fill: white;
+}
+.svg.close-dialog:focus path,
+.svg.close-dialog:hover path {
+	fill: #163554;
 }

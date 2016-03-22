@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nifty Gullifty Search</title>
+	<link rel="stylesheet" href="css/normalization.css" />
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/form.css" />
+	<link rel="stylesheet" href="css/search-engine.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="page-wrapper" id="main" role="main" tabindex="-1">
+			<nav>
+				<ul class="nav-items">
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">All</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Images</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Videos</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">News</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Shopping</a></li>
+					<li class="nav-item"><a class="btn btn-primary nav-link" href="#">Advanced Search</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h1>Nifty Gullifty Search Engine</h1>
+				<form action="" class="search">
+					<label for="searchQuery">I want to search for</label>
+					<input type="text" id="searchQuery" />
+					<button class="btn btn-primary" id="submitSearchQuery">Go</button>
+				</form>
+				<div class="search-results is-hidden">
+					<p>Showing results for <strong id="queryString"></strong></p>
+					<ul class="results">
+						<li class="result">
+							<img src="img/cooking/dry.png" alt="" class="result-img" />
+							<p><a href="chocolate-cake-better.html" class="result-link">Granny's Secret Chocolate Cake</a></p>
+							<p class="result-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque deserunt cupiditate nesciunt neque sint debitis earum inventore quibusdam facere expedita minima, numquam voluptate, porro, veniam? Quos, esse, maxime. Optio, incidunt.</p>
+						</li>
+						<li class="result">
+							<p><a href="chocolate-cake.html" class="result-link">Chocolate Cake Recipe</a></p>
+							<p class="result-descr">Repellendus inventore ex, eveniet ipsa minus, enim impedit maiores veritatis corrupti blanditiis molestias hic illum architecto doloremque ad. Quas voluptatibus et aliquid est vitae, dolor quia sunt at odit ratione!</p>
+						</li>
+						<li class="result">
+							<p><a href="" class="result-link">Moist Chocolate Cake Recipe</a></p>
+							<p class="result-descr">Vitae, deleniti eveniet consectetur reprehenderit hic voluptate dignissimos iusto. Nihil consequuntur laudantium, in quae. Quis aut libero, harum eligendi ex veniam, magni sed, numquam itaque, ipsam officia nulla amet cum!</p>
+						</li>
+						<li class="result">
+							<img src="img/cooking/batter.png" alt="" class="result-img" />
+							<p><a href="" class="result-link">Best Moist Chocolate Cake</a></p>
+							<p class="result-descr">Iste laboriosam quas nobis eum perferendis aliquam aliquid fugit rerum nostrum quam fugiat voluptatem dignissimos, repellat excepturi vero nemo similique quo eius nam voluptates aspernatur animi, veniam at illum quod!</p>
+						</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+		<div class="overlay"></div>
+		<div class="block-screen"></div>
+		<div aria-live="polite" class="accessibly-hidden"></div>
+		<div role="alert" class="accessibly-hidden"></div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/namespacing.js"></script>
+	<script type="text/javascript" src="js/accessibility-helpers.js"></script>
+	<script type="text/javascript" src="js/search-engine.js"></script>
+</body>
+</html>

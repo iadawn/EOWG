@@ -20,9 +20,12 @@
     });
     $('#gift').on('click', function (evt) {
         $('.fake-btn, [aria-controls="placeOrder"]').toggleClass('is-hidden');
+        $('body').toggleClass('re-skin');
     });
     $('#moreInfoButton').on('click', function (evt) {
         $('#thankYouContent, #moreInfo').toggleClass('is-hidden');
+        $('#moreInfo').closest('.modal').find('.close-dialog').focus();
+
     });
     $('#placeOrder .close-dialog').on('click', function (evt) {
         if($('#thankYouContent').hasClass('is-hidden')) {

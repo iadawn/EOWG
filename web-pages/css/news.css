@@ -1,0 +1,209 @@
+body {
+	font-size: 1.4rem;
+}
+header {
+	position: relative;
+}
+h1 {
+	font-family: "Times New Roman", Times, serif;
+	margin: 0;
+	padding: 2ex 1em 2ex;
+	border-bottom: none;
+	color: white;
+	background-color: #163554;
+	text-align: right;
+	font-size: 3.2rem;
+	padding-left: 75px;
+}
+h2 {
+	font-size: 2.7rem;
+	margin-top: 4ex;
+}
+.hamburger {
+	position: absolute;
+	left: 20px;
+	top: 50%;
+	margin-top: -16px;
+	width: 40px;
+	height: 32px;
+	box-sizing: border-box;
+	border: 6px solid #aaa;
+	border-width: 6px 0 6px 0;
+	background-color: transparent;
+}
+.hamburger:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	height: 6px;
+	margin-top: -3px;
+	background-color: #aaa;
+
+}
+.hamburger:focus,
+.hamburger:hover {
+	border-color: white;
+}
+.hamburger:focus:before,
+.hamburger:hover:before {
+	background-color: white;
+}
+nav {
+	background-color: #163554;
+	padding-top: 7.5ex;
+	width: 40%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: none;
+	border-right: 5px solid #aaa;
+}
+nav.open {
+	display: block;
+}
+.close-menu {
+	position: absolute;
+	right: 7px;
+	top: 12px;
+	border: none;
+	background-color: transparent;
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	display: none;
+}
+.open .close-menu {
+	display: block;
+}
+.close-menu circle {
+	fill: #ddd;
+}
+.close-menu path {
+	fill: black;
+}
+.close-menu:focus,
+.close-menu:hover {
+	outline: none;
+	box-shadow: none;
+}
+.close-menu:focus circle,
+.close-menu:hover circle {
+	fill: black;
+	stroke: #ddd;
+	r: 29;
+	stroke-width: 6;
+}
+.close-menu:focus path,
+.close-menu:hover path {
+	fill: #ddd;
+}
+.nav-items {
+	margin: 0;
+	padding: 0;
+}
+.nav-item {
+	margin: 0;
+	padding: 0;
+}
+.nav-link {
+	display: block;
+	background-color: #ddd;
+	color: #000;
+	font-weight: bold;
+	padding: 1ex 1em;
+	border: 1px solid #aaa;
+	border-bottom: 0;
+}
+.search-bar {
+	background-color: #163554;
+	color: white;
+	font-weight: bold;
+	padding: 2ex 3em 2ex;
+	line-height: 3em;
+	display: none;
+}
+.search-bar label {
+	padding: 0;
+	margin: 0;
+	margin-right: .75em;
+	width: auto;
+}
+.search-bar input {
+	padding: 0.5ex 0.25em;
+	margin: 0 0 0 0.5em;
+	width: 5em;
+}
+#keywords {
+	width: 21em;
+}
+.search-bar button {
+	padding: 0.6ex 0.5em;
+}
+.form-cell {
+	width: 32%;
+	display: inline-block;
+	margin-right: .25em;
+	position: relative;
+}
+.archive-image {
+	width: 35%;
+	float: right;
+	padding: 0 0 1.5ex 1em;
+	display: none;
+}
+.article-date {
+	font-style: italic;
+}
+.search-results h2 {
+	font-size: 2.2rem;
+}
+.search-results .cite {
+	display: none;
+}
+.search-results .cite-img {
+	margin-bottom: 2ex;
+}
+.search-results article {
+	border-bottom: 1px solid #163554;
+	padding-bottom: 5.4ex;
+}
+
+@media only screen and (min-width: 1024px) {
+    /* For desktop: */
+	.hamburger {
+		display: none;
+	}
+	.search-bar {
+		display: block;
+	}
+	nav {
+		padding: 0 2em;
+		width: auto;
+		position: relative;
+		display: block;
+		border: none;
+		background-color: white;
+		overflow: hidden;
+	}
+	.nav-item {
+		display: inline-block;
+	}
+	.current .nav-link {
+		color: white;
+		background-color: #163554;
+	}
+	h1 {
+		text-align: left;
+		padding-left: 2.3ex;
+		background-color: white;
+		color: #163554;
+	}
+	.archive-image {
+		display: block;
+	}
+}

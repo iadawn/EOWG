@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/normalization.css" />
 	<link rel="stylesheet" href="css/base.css" />
 	<link rel="stylesheet" href="css/dialog.css" />
-	<link rel="stylesheet" href="css/apple-cart.css">
+	<link rel="stylesheet" href="css/bookstore-form.css">
 </head>
 <body>
 	<div class="container">
@@ -16,10 +16,10 @@
 				<div class="apple-cart-logo">
 					<span class="accessibly-hidden">Apple Cart Logo</span>
 					<svg id="appleCartLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410.7 366" role="presentation" focusable="false">
-						<path d="M357.7,126.6c0-32.9-26.6-59.5-59.5-59.5c-18.2,0-34.5,8.2-45.5,21.1c-10.6-10-24.9-16.1-40.6-16.1c-32.9,0-59.5,26.6-59.5,59.5c0,26.4,29.5,120.3,73.6,120.3c11.5,0,21.8-4.8,29.1-12.5c7.3,7.7,17.7,12.5,29.1,12.5C330.7,252,357.7,154.1,357.7,126.6z"/>
-						<path d="M252.7,42.8c-3.7-5.8-9.8-10-19.9-10.4L225.1,47c27-3.2,25.3,34,25.3,34h5.1c0,0,2.1-8.2,2-17.8c23.8,9.1,52.1-6.6,53.3-63.2C298.9,17.6,261.5,15.3,252.7,42.8z"/>
-						<path fill="#FFFFFF" stroke="#000000" stroke-width="20" stroke-miterlimit="10" d="M374.1,298.3c0-21.5,6.4-42.3,17.4-58.3H61.2c-27.6,0-50.5,21.9-50.5,49.5v16c0,27.6,22.9,50.5,50.5,50.5h330C380.3,339,374.1,319.6,374.1,298.3z"/>
-						<line fill="#FFFFFF" stroke="#000000" stroke-width="20" stroke-miterlimit="10" x1="87.7" y1="298" x2="373.7" y2="298"/>
+						<path class="apple" d="M357.7,126.6c0-32.9-26.6-59.5-59.5-59.5c-18.2,0-34.5,8.2-45.5,21.1c-10.6-10-24.9-16.1-40.6-16.1c-32.9,0-59.5,26.6-59.5,59.5c0,26.4,29.5,120.3,73.6,120.3c11.5,0,21.8-4.8,29.1-12.5c7.3,7.7,17.7,12.5,29.1,12.5C330.7,252,357.7,154.1,357.7,126.6z"/>
+						<path class="leaf" d="M252.7,42.8c-3.7-5.8-9.8-10-19.9-10.4L225.1,47c27-3.2,25.3,34,25.3,34h5.1c0,0,2.1-8.2,2-17.8c23.8,9.1,52.1-6.6,53.3-63.2C298.9,17.6,261.5,15.3,252.7,42.8z"/>
+						<path class="book" fill="#FFFFFF" stroke="#000000" stroke-width="15" stroke-miterlimit="10" d="M374.1,298.3c0-21.5,6.4-42.3,17.4-58.3H61.2c-27.6,0-50.5,21.9-50.5,49.5v16c0,27.6,22.9,50.5,50.5,50.5h330C380.3,339,374.1,319.6,374.1,298.3z"/>
+						<line class="book-line" fill="#FFFFFF" stroke="#000000" stroke-width="15" stroke-miterlimit="10" x1="87.7" y1="298" x2="373.7" y2="298"/>
 					</svg>
 				</div>
 				<h1>Check Out</h1>
@@ -29,7 +29,7 @@
 			<main>
 				<article class="ship-to">
 					<h2>Ship To</h2>
-					<button type="button" class="btn btn-primary" data-controls="modal" aria-controls="changeAddress">Change<span class="accessibly-hidden"> Shipping Address</span></button>
+					<button type="button" class="btn btn-primary" data-controls="modal" aria-controls="changeAddress">CHANGE<span class="accessibly-hidden"> Shipping Address</span></button>
 					<p class="name">
 						<span data-address="firstName">Hayden</span>
 						<span data-address="lastName">Jones</span>
@@ -118,7 +118,7 @@
 						<label for="zipCode">Zip Code</label>
 						<input type="text" id="zipCode" value="12345" />
 					</div>
-					<button type="submit" class="btn btn-primary" data-control="close">Finish</button>
+					<button type="submit" class="btn btn-primary" data-control="close">FINISH</button>
 				</form>
 			</div>
 		</div>
@@ -138,19 +138,23 @@
 				</div>
 				<div id="thankYouContent">
 					<h2>Your order has been placed.</h2>
-					<p class="h3">Here is another book you might like.</p>
+					<p class="h3">We thought you might like this book as well. Would you like more information?</p>
 					<div class="more-suggestions cart-items">
 						<div class="cart-item">
-							<img src="img/brief-history.png" alt="" />
+							<img src="img/crumbcake.png" alt="" />
 							<h3 class="book-name">Crumb Cakes and Cookies</h3>
 							<div class="author">by Sally Bakealot</div>
-							<button type="button" class="btn btn-primary" id="moreInfoButton">More Info</button>
+							<button type="button" class="btn btn-primary" id="moreInfoButton">MORE INFO</button>
 						</div>
 					</div>
 				</div>
 				<div id="moreInfo" class="is-hidden">
-					<h2>TEST</h2>
+					<img src="img/crumbcake-large.png" alt="" />
+					<h2>Crumb Cakes and Cookies</h2>
+					<p>by Sally Bakealot</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe in, cum esse ipsa totam cumque iusto assumenda ullam qui culpa earum voluptatibus odio, porro quod ea ducimus. Aspernatur officiis, eveniet.</p>
+					<div class="price">$54.95</div>
+					<button type="button" class="btn btn-primary" id="addToCart">ADD TO CART</button>
 				</div>
 			</div>
 		</div>

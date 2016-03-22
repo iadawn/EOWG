@@ -140,3 +140,29 @@ input[type="radio"]+svg {
 svg+label {
 	margin-left: -31px;
 }
+.svg-radio .stroke,
+.svg-radio .center {
+	transition-duration: 1s;
+    transition-property: r, stroke-width, stroke;
+}
+.svg-radio .stroke {
+	r: 3;
+	stroke-width: 1;
+	stroke: #767676;
+}
+.svg-radio .center {
+	r: 1.5;
+}
+.get-big.svg-radio .stroke {
+	r: 8;
+	stroke-width: 1.5;
+	stroke: #333;
+}
+.get-big.svg-radio .center {
+	r: 5;
+}
+[type="reset"],
+[type="submit"] {
+	outline: none;
+	box-shadow: none;
+}

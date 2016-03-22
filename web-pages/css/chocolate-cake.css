@@ -1,33 +1,130 @@
+/*
+light gray: #f2f2f2;
+med gray: #e6e6e6;
+dark gray: #777777;
+orange: #df7000;
+green: ##0D8000;
+*/
 body {
-    background-color: black;
-    line-height: 1;
-    background-color: #aaa;
+    background-color: #e6e6e6;
     font-size: 1.5rem;
+}
+.search-bar {
+    border-bottom: 1px solid #D5D5D5;
+    text-align: right;
+    box-sizing: border-box;
+    padding: .5ex .5em;
+}
+.search-bar button {
+    background-color: #0D8000;
+    font-size: 1.3rem;
+    height: 30px;
+    vertical-align: bottom;
+}
+.banner {
+    background-color: #0D8000;
+    overflow: hidden;
+    padding-right: .5em;
 }
 h1 {
+    border: none;
+    text-transform: none;
+    color: white;
+    float: left;
+    margin: 0;
+    padding: .5ex 0 .5ex .25em;
+}
+.breadcrumbs {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    overflow: hidden;
+}
+.breadcrumb {
+    display: inline-block;
     margin: 0;
     padding: 0;
-    font-size: 1.5rem;
+}
+.breadcrumb:last-child {
+    background-color: #e6e6e6;
+}
+.bread-link {
+    color: black;
+    font-weight: normal;
+    padding: 0;
+    display: block;
+}
+.breadcrumb:first-child .bread-link {
+}
+.bread-link:after {
+    content: "\00bb";
+    padding: 0 .5em 0 1em;
+}
+.breadcrumb:last-child .bread-link:after {
+    content: "";
+}
+.cta {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.cta-item {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.cta-item:first-child {
+    border: none;
+}
+.cta button {
+    border: none;
+    display: block;
+    color: white;
+    background-color: #0D8000;
+    padding: 2ex 0 .5ex .5em;
+    height: auto;
+    width: 100%;
+    font-weight: bold;
+}
+article {
+    overflow: hidden;
+    padding: 0;
 }
 h2 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-.page-wrapper {
-    overflow: hidden;
-    width: 50%;
-    background-color: #eee;
+    font-weight: normal;
+    color: #777;
+    padding: 0;
+    border-bottom: 1px solid #0D8000;
+    margin: .25ex 0;
 }
 .ingredients {
-    overflow: hidden;
+    width: 20%;
     float: left;
-    width: 35%;
-    color: #900;
+    background-color: hsla(114,20%,32%,1);
+    color: white;
+    padding: .25ex .5em;
+    margin-right: .5em;
 }
-li {
+.ingredients h2 {
+    color: white;
+    border-bottom-color: white;
+}
+.ingredients ul,
+.directions ul {
     margin: 0;
+    padding: 0;   
+}
+.ingredients li {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
     line-height: 1;
 }
+.ingredients li:before {
+    content: "\2022";
+    font-weight: bold;
+    margin-right: .5ex;
+}
 .directions {
-    overflow: hidden;
+    padding: .25ex .5em;
 }
